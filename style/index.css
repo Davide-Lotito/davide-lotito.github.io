@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(86, 85, 85);
+    font-family: "Montserrat";
+    font-size: 1.5em;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("./font/Montserrat/static/Montserrat-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat Title";
+    src: url("./font/Montserrat/static/Montserrat-Black.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.hello{
+    color: yellow;
+    transition: 1s;
+}
+
+.hello:hover{
+    color: black;
+    transform: rotate(360deg);
+}
+
+.personal{
+    color: black;
+}
+
+.personal:hover{
+    color: yellow;
+}
+
+.title{
+    font-family: "Montserrat Title";
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.bio, .sub-title{
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.bio strong{
+    color: red;
+}
+
+.contact{
+    position: relative;
+    width: 90%;
+    left: 5%;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.contact a{
+    text-decoration: none;
+    color: wheat;
+    padding-left: 0.5em;
+}
+
+.contact img{
+    width: 5%;
+    padding-right: 0.5em;
+}
+
+.projects{
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.projects ul{
+    list-style: none;
+}
+
+.projects ul li a{
+    color: rgb(0, 210, 189);
+}
+
+.projects ul li{
+    border: 3px solid grey;
+    border-radius: 8px 0 8px 0;
+    text-decoration: none;
+    padding: 1em;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.projects ul li p{
+    padding: 1em;
+}
+
+.footer{
+    padding: 0.5em;
+    background-color: rgb(154, 154, 154);
+    text-align: center;
+    font-size: 0.65em;
+}
+
+.footer img{
+    width: 3%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
