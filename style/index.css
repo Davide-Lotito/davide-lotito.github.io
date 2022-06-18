@@ -27,7 +27,7 @@ body{
 
 .hello:hover{
     color: black;
-    transform: rotate(360deg);
+    transform: rotate(180deg);
 }
 
 .personal{
@@ -51,7 +51,12 @@ body{
 }
 
 .bio strong{
-    color: red;
+    color: yellow;
+}
+
+.bio a{
+    text-decoration: none;
+    color: black;
 }
 
 .contact{
