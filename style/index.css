@@ -100,7 +100,7 @@ body{
 .contact{
     padding: 5rem;
     text-align: left;
-    background-color: darkgrey;
+    background-color: rgb(134, 134, 134);
 }
 
 .contact a{
@@ -148,7 +148,6 @@ body{
 
 .footer{
     padding: 0.5em;
-    background-color: rgb(154, 154, 154);
     text-align: center;
     font-size: 0.65em;
 }
@@ -195,7 +194,7 @@ body{
     }
     .contact{
         text-align: center;
-        padding: 0;
+        padding: 1em;
     }
     .contact img{
         display: none;
@@ -204,12 +203,10 @@ body{
 
 @media screen and (max-width: 500px) {
     .projects{
-        padding: 0;
-        margin: 5%;
+        padding: 1em;
     }
     .about{
-        padding: 0;
-        margin: 5%;
+        padding: 1em;
     }
 }
 
