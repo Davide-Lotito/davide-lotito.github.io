@@ -8,18 +8,30 @@
     <title>My personal website</title>
     <meta name="description" content="This is my personal website">
     <meta name="author" content="Lotito Davide Pio">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/index.css"><!--custom style CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon library -->
 </head>
 <body>
 
-    <h1 class="title">
-        <div class="hello">Hello!</d>
-        <br>
-        <div class="personal">Davide Lotito's personal website</div>
-    </h1>
+    <!--Top Navigation Bar-->
+    <section class="topnav sticky" id="Topnav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a class="icon" onclick="responsiveTopBar()"><i class="fa fa-bars"></i></a>        
+    </section>
 
-    <div class="bio">
+    <!--Header Section-->
+    <header id="home" class="head-banner">
+        <h2 class="title">Davide Lotito</h2>
+        <h4>personal website</h4>
+    </header>
+
+
+    <!--About Section-->
+    <div class="about" id="about">
+        <h2 class="title">About</h2>
         <p>
             At the present date I am a postgraduate student of computer engineering at the <a href="https://web.unipv.it/">University of Pavia</a>, in Italy, where I got my bachelor degree last year.
             <br>
@@ -27,14 +39,11 @@
         </p>
     </div>
 
-    <div class="contact">
-        <img src="./images/mail.png">You can contact me via email:
-        <a href="mailto:davideloti99@gmail.com">davideloti99@gmail.com</a>
-    </div>
+    <button onclick="topFunction()" id="go-top-btn" title="Go to top">Top</button> 
 
-    <h3 class="sub-title title">Below you can find my main projects.</h3>
-
-    <div class="projects">
+    <!--Projects Section-->
+    <div class="projects" id="projects">
+        <h2 class="title">Projects</h2>
         <ul>
             <li>
                 <a href="https://github.com/Davide-Lotito/BashScripting" target="_blank" class="left">Bash Scripting</a>
@@ -65,7 +74,7 @@
                 <p>A program, using Python, useful to to analyze an image of the Sudoku puzzle and understand the numbers.</p>
             </li>
             <li>
-                <a href="https://github.com/Davide-Lotito/WMT_project" target="_blank" class="left">Website for a Restaurant</a>
+                <a href="https://github.com/Davide-Lotito/WMT_project" target="_blank" class="left">Restaurant Website</a>
                 <p>This is the template for a restaurant website.</p>
             </li>
             <li>
@@ -74,7 +83,13 @@
                 <p>This is a graphing calculator. It allows you to draw a function starting from its expression.</p>
             </li>
         </ul>
+    </div>
 
+    <!--Contacts Section-->
+    <div class="contact" id="contact">
+        <h2 class="title">Contact</h2>
+            <img src="./images/mail.png">You can contact me via email:
+            <a href="mailto:davideloti99@gmail.com">davideloti99@gmail.com</a>
     </div>
 
     <div class="footer">
@@ -84,6 +99,6 @@
         <a href="https://www.linkedin.com/in/davide-lotito"><img src="./images/linkedin.png"></a>
         <a href="https://twitter.com/LotitoDavidePio"><img src="./images/twitter.png"></a> 
     </div>
-    
+    <script src="./style/script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(86, 85, 85);
+    background-color: rgb(158, 157, 157);
     font-family: "Montserrat";
     font-size: 1.5em;
 }
@@ -20,84 +20,124 @@ body{
     font-style: normal;
 }
 
-.hello{
-    color: yellow;
-    transition: 1s;
-}
-
-.hello:hover{
-    color: black;
-    transform: rotate(180deg);
-}
-
-.personal{
-    color: black;
-}
-
-.personal:hover{
-    color: yellow;
-}
-
 .title{
+    font-size: 2em;
     font-family: "Montserrat Title";
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(73, 73, 73);
+    overflow: hidden;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
     text-align: center;
-    font-size: 1.8em;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
-.bio, .sub-title{
-    position: relative;
-    width: 80%;
-    left: 10%;
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(181, 181, 181);
+    color: black;
 }
 
-.bio strong{
-    color: yellow;
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: rgba(255, 255, 0, 0.5);
+    color: white;
 }
 
-.bio a{
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+.head-banner{
+    color: white;
+    text-align: center;
+    padding: 8rem;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.about .title{
+    text-align: left;
+}
+
+.projects .title{
+    text-align: left;
+}
+
+.about{
+    padding: 5rem;
+    text-align: left;
+    background-color: rgb(134, 134, 134);
+}
+
+.about strong{
+    color: rgba(255, 255, 0, 0.5);
+}
+
+.about a{
     text-decoration: none;
     color: black;
 }
 
 .contact{
-    position: relative;
-    width: 90%;
-    left: 5%;
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding: 5rem;
+    text-align: left;
+    background-color: darkgrey;
 }
 
 .contact a{
     text-decoration: none;
     color: wheat;
-    padding-left: 0.5em;
+    display: inline-block;
 }
 
 .contact img{
-    width: 5%;
+    width: 4%;
     padding-right: 0.5em;
 }
 
 .projects{
-    position: relative;
-    width: 80%;
-    left: 10%;
+    padding: 5rem;
 }
 
 .projects ul{
     list-style: none;
+    padding: 0;
 }
 
 .projects ul li a{
-    color: rgb(0, 210, 189);
+    color: rgb(3, 235, 212);
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+
+.projects ul li img{
+    padding-top: 0.5em;
+    padding-right: 1em;
 }
 
 .projects ul li{
     border: 3px solid grey;
     border-radius: 8px 0 8px 0;
     text-decoration: none;
-    padding: 1em;
     margin-top: 1%;
     margin-bottom: 1%;
 }
@@ -124,3 +164,55 @@ body{
 .right{
     float: right;
 }
+
+#go-top-btn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    background-color: rgba(255, 255, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 1em;
+    font-family: "Montserrat";
+    border-radius: 10px;
+  }
+  
+#go-top-btn:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .head-banner{
+        padding: 4rem;
+    }
+    .contact{
+        text-align: center;
+        padding: 2em;
+    }
+    .contact img{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+} 
