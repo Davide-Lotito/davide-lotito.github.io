@@ -200,7 +200,22 @@ body{
     .contact img{
         display: none;
     }
+}
 
+@media screen and (max-width: 500px) {
+    .projects{
+        padding-left: 2rem;
+    }
+    .about{
+        padding-left: 2em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .projects ul li img{
+        padding-top: 0;
+        padding-right: 0;
+    }
 }
 
 @media screen and (max-width: 600px) {
