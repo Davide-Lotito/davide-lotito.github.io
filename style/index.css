@@ -195,7 +195,7 @@ body{
     }
     .contact{
         text-align: center;
-        padding: 2em;
+        padding: 0;
     }
     .contact img{
         display: none;
@@ -204,10 +204,12 @@ body{
 
 @media screen and (max-width: 500px) {
     .projects{
-        padding-left: 2rem;
+        padding: 0;
+        margin: 5%;
     }
     .about{
-        padding-left: 2em;
+        padding: 0;
+        margin: 5%;
     }
 }
 
