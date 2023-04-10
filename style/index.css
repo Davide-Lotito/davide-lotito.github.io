@@ -183,6 +183,16 @@ body{
     background-color: #555;
 }
 
+#cv{
+    text-decoration: underline;
+}
+
+#email-img{
+    width: 30%;
+    display:inline;
+    vertical-align:middle;
+}
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -214,6 +224,22 @@ body{
     .projects ul li img{
         padding-top: 0;
         padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #email-img{
+        width: 50%;
+        display:inline;
+        vertical-align:middle;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #email-img{
+        width: 60%;
+        display:inline;
+        vertical-align:middle;
     }
 }
 
