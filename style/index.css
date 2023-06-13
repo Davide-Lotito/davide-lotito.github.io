@@ -74,6 +74,17 @@ body{
     background-blend-mode: multiply;
 }
 
+.stocazzo{
+    background-color: white;
+    color: black;
+    position: relative;
+    width: 40%;
+    left: 30%;
+    padding: 1%;
+    border-radius: 8px 0 8px 0;
+    box-shadow: rgb(134, 134, 134) 10px 10px;
+}
+
 .about .title{
     text-align: left;
 }
@@ -86,10 +97,6 @@ body{
     padding: 5rem;
     text-align: left;
     background-color: rgb(134, 134, 134);
-}
-
-.about strong{
-    color: rgba(255, 255, 0, 0.5);
 }
 
 .about a{
@@ -124,7 +131,8 @@ body{
 }
 
 .projects ul li a{
-    color: rgb(3, 235, 212);
+    text-decoration: underline;
+    color: black;
     padding-top: 0.5em;
     padding-left: 1em;
 }
@@ -171,7 +179,7 @@ body{
     right: 20px;
     z-index: 99;
     border: none;
-    background-color: rgba(255, 255, 0, 0.5);
+    background: hsl(190deg, 30%, 15%);
     color: white;
     cursor: pointer;
     padding: 1em;
