@@ -239,6 +239,24 @@ body{
     }
 }
 
+@media screen and (max-width: 800px) {
+    .stocazzo{
+        font-size: small;
+        position: relative;
+        width: 80%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .stocazzo{
+        font-size: x-small;
+        position: relative;
+        width: 96%;
+        left: 2%;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .projects{
         padding: 1em;
