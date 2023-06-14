@@ -1,0 +1,10 @@
+/* Styles for website counter container */
+.website-counter {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    position: relative;
+    width: 10%;
+    left: 45%;
+    border-radius: 8px 0 8px 0;
+    box-shadow: rgb(134, 134, 134) 5px 5px;
+}
