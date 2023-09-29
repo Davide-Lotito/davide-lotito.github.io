@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./images/logo.jpg">
-    <title>My personal website</title>
+    <title>Davide's personal website</title>
     <meta name="description" content="This is my personal website">
     <meta name="author" content="Lotito Davide Pio">
     <link rel="stylesheet" href="./style/index.css"><!--custom style CSS-->
     <link rel="stylesheet" href="./style/button.css"><!--button CV style-->
+    <link rel="stylesheet" href="./style/slideshow.css"><!--slideshow style-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!-- icon library -->
 </head>
 <body>
@@ -19,6 +20,7 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#courses">Courses</a>
             <a href="#contact">Contact</a>
             <a class="icon" onclick="responsiveTopBar()"><i class="fa fa-bars"></i></a>        
     </section>
@@ -36,7 +38,7 @@
     <div class="about" id="about">
         <h2 class="title">About</h2>
         <p>
-            At the present date I am a postgraduate student of computer engineering at the <a href="https://web.unipv.it/">University of Pavia</a>, in Italy, where I got my bachelor degree last year.
+            At the present date I am a postgraduate computer engineer. I got my master degree at the <a href="https://web.unipv.it/">University of Pavia</a>, in Italy, in September 2023.
             <br>
             I am very interested in topics related to <strong>Cybersecurity and Networking</strong>.
         </p>
@@ -47,6 +49,57 @@
 
     <button onclick="topFunction()" id="go-top-btn" title="Go to top">Top</button> 
 
+    <!--Courses Section-->
+    <div id="courses" class="projects">
+        <h2 class="title">Courses</h2>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <embed src="https://drive.google.com/file/d/1PM_keCCvvSIX7R0mVtEGPATOadTiyqPB/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1eUd0EvhOPLuinr5kW47VJDIg8sko9mq3/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1zspwd4tsIzdZpoK7apaTaWAc1N3LWA2a/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1WNfLxSiDKMcbojLM1lYcnlNGi_xo9Qr_/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/11oSPDsXtePnTGVDUK-GsBM8Z4SFp2pcd/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1GsXXrS1uGVD2X8OdmE8_OLtyGJy1hsd5/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1YRmBk_ZPBSlowbEHn6j797S-Nztv60pD/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/159GGEffMzVwCC7LfWcq5Af3OWplzkFJz/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            <div class="mySlides fade">
+                <embed src="https://drive.google.com/file/d/1TER-aST358Js90Bd24BhAvvodCmA9gGV/preview" style="min-height:80vh;width:100%" type="application/pdf">
+            </div>
+
+            
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+    </div>
+
+
     <!--Projects Section-->
     <div class="projects" id="projects">
         <h2 class="title">Projects</h2>
@@ -54,7 +107,7 @@
             <li>
                 <a href="https://github.com/Davide-Lotito/translator-cloud-project" target="_blank" class="left">Translator Cloud Project</a>
                 <img src="./images/collaboration.png" class="right">
-                <p>It is an online translator that uses artificial intelligence algorithms to improve translation.</p>
+                <p>This is an online translator that uses AI algorithms to improve translation.</p>
             </li>
             <li>
                 <a href="https://github.com/Davide-Lotito/BashScripting" target="_blank" class="left">Bash Scripting</a>
@@ -63,7 +116,7 @@
             <li>
                 <a href="https://github.com/Davide-Lotito/mdns-security" target="_blank" class="left">mDNS Security</a>
                 <img src="./images/collaboration.png" class="right">
-                <p>The goal is to simulate a DoS attack on a target, relying on the mDNS protocol.</p>
+                <p>This an exam project and its goal is to simulate a DoS attack on a target, relying on the mDNS protocol.</p>
             </li>
             <li>
                 <a href="https://github.com/Davide-Lotito/Zeek-Script" target="_blank" class="left">Zeek Scripting</a>
@@ -77,21 +130,21 @@
             <li>
                 <a href="https://github.com/Davide-Lotito/CV_Detect_Square" target="_blank" class="left">Detect Squares</a>
                 <img src="./images/collaboration.png" class="right">
-                <p>A program, using Java, useful to detect squares without using external libraries.</p>
+                <p>A tool written in Java, which is able to detect squares without using external libraries.</p>
             </li>
             <li>
                 <a href="https://github.com/Davide-Lotito/CV_Sudoku" target="_blank" class="left">Detect sudoku numbers</a>
                 <img src="./images/collaboration.png" class="right">
-                <p>A program, using Python, useful to to analyze an image of the Sudoku puzzle and understand the numbers.</p>
+                <p>A tool written in Python, which is able to analyze an image of the Sudoku puzzle.</p>
             </li>
             <li>
                 <a href="https://github.com/Davide-Lotito/WMT_project" target="_blank" class="left">Restaurant Website</a>
-                <p>This is the template for a restaurant website.</p>
+                <p>This is an exam project, i.e., website template for a restaurant.</p>
             </li>
             <li>
                 <a href="https://github.com/Davide-Lotito/Progetto-L21" target="_blank" class="left">Graphing calculator</a>
                 <img src="./images/collaboration.png" class="right">
-                <p>This is a graphing calculator. It allows you to draw a function starting from its expression.</p>
+                <p>This is a graphing calculator that allows you to draw a function starting from its expression.</p>
             </li>
         </ul>
     </div>
@@ -101,8 +154,8 @@
         <h2 class="title">Contact</h2>
             <img src="./images/mail.png" style="display:inline;">
             You can contact me via email:
-            <img src="./images/email.PNG" id="email-img">
-            <!-- <a href="mailto:davideloti99@gmail.com">davideloti99@gmail.com</a> -->
+            <!-- <img src="./images/email.PNG" id="email-img"> -->
+            <a href="mailto:davideloti99@gmail.com">davideloti99@gmail.com</a>
     </div>
 
     <div class="footer">
@@ -113,5 +166,6 @@
         <a href="https://twitter.com/LotitoDavidePio"><img src="./images/twitter.png"></a> 
     </div>
     <script src="./style/script.js"></script>
+    <script src="./style/slideshow.js"></script>
 </body>
 </html>
